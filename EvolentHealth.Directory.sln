@@ -1,0 +1,112 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{52793A96-45B3-49E5-832D-0DE0A8E315EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{3040C6D4-DCC4-47D3-A837-4F0FC58EEDBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contact", "Contact", "{557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{7BC0B0C2-F0CE-44E5-8C42-30339A5ACCD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Contact.Hosting.AzureFunction", "Contact\Hosting\EvolentHealth.Directory.Contact.Hosting.AzureFunction\EvolentHealth.Directory.Contact.Hosting.AzureFunction.csproj", "{EEFCA7C7-6A10-450B-8A6B-D081811F7108}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Contact.Hosting.Bootstrap", "Contact\Hosting\EvolentHealth.Directory.Contact.Hosting.Bootstrap\EvolentHealth.Directory.Contact.Hosting.Bootstrap.csproj", "{DA53FF66-1EDC-43EE-BA3D-49D094BDCFF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Contact.Business", "Contact\EvolentHealth.Directory.Contact.Business\EvolentHealth.Directory.Contact.Business.csproj", "{0D55169A-FF7A-4C34-B878-4A2E983CA138}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Contact.Contract", "Contact\EvolentHealth.Directory.Contact.Contract\EvolentHealth.Directory.Contact.Contract.csproj", "{5876943A-D66A-4433-A70C-E530C2B97905}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Contact.DataAccess", "Contact\EvolentHealth.Directory.Contact.DataAccess\EvolentHealth.Directory.Contact.DataAccess.csproj", "{25F46B85-92F8-4C6D-820C-78F5C28676B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Contact.Dto", "Contact\EvolentHealth.Directory.Contact.Dto\EvolentHealth.Directory.Contact.Dto.csproj", "{C8F0C661-385D-46A2-AA3E-4B8452EEE65F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Contact.IntegrationTest", "Contact\EvolentHealth.Directory.Contact.IntegrationTest\EvolentHealth.Directory.Contact.IntegrationTest.csproj", "{2E5C4B1B-03D5-4051-BC43-B96335E9C4E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Contact.Repository", "Contact\EvolentHealth.Directory.Contact.Repository\EvolentHealth.Directory.Contact.Repository.csproj", "{81B18F78-26B5-478C-B02E-B2E4DC4FD069}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5876943A-D66A-4433-A70C-E530C2B97905} = {5876943A-D66A-4433-A70C-E530C2B97905}
+		{25F46B85-92F8-4C6D-820C-78F5C28676B8} = {25F46B85-92F8-4C6D-820C-78F5C28676B8}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Contact.UnitTest", "Contact\EvolentHealth.Directory.Contact.UnitTest\EvolentHealth.Directory.Contact.UnitTest.csproj", "{8202DD0A-6542-4AAE-A16F-A722D6680308}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvolentHealth.Directory.Core.AspNet", "Core\EvolentHealth.Directory.Core.AspNet\EvolentHealth.Directory.Core.AspNet.csproj", "{C02BE77D-05E5-46A3-840E-4E0DF43FE5BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolentHealth.Directory.Core.Utils", "Core\EvolentHealth.Directory.Core.Utils\EvolentHealth.Directory.Core.Utils.csproj", "{FD203B9F-EAF1-4B06-AC25-D5F043C2FC4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEFCA7C7-6A10-450B-8A6B-D081811F7108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFCA7C7-6A10-450B-8A6B-D081811F7108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFCA7C7-6A10-450B-8A6B-D081811F7108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFCA7C7-6A10-450B-8A6B-D081811F7108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA53FF66-1EDC-43EE-BA3D-49D094BDCFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA53FF66-1EDC-43EE-BA3D-49D094BDCFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA53FF66-1EDC-43EE-BA3D-49D094BDCFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA53FF66-1EDC-43EE-BA3D-49D094BDCFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D55169A-FF7A-4C34-B878-4A2E983CA138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D55169A-FF7A-4C34-B878-4A2E983CA138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D55169A-FF7A-4C34-B878-4A2E983CA138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D55169A-FF7A-4C34-B878-4A2E983CA138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5876943A-D66A-4433-A70C-E530C2B97905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5876943A-D66A-4433-A70C-E530C2B97905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5876943A-D66A-4433-A70C-E530C2B97905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5876943A-D66A-4433-A70C-E530C2B97905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F46B85-92F8-4C6D-820C-78F5C28676B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F46B85-92F8-4C6D-820C-78F5C28676B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F46B85-92F8-4C6D-820C-78F5C28676B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F46B85-92F8-4C6D-820C-78F5C28676B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F0C661-385D-46A2-AA3E-4B8452EEE65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F0C661-385D-46A2-AA3E-4B8452EEE65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F0C661-385D-46A2-AA3E-4B8452EEE65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F0C661-385D-46A2-AA3E-4B8452EEE65F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5C4B1B-03D5-4051-BC43-B96335E9C4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5C4B1B-03D5-4051-BC43-B96335E9C4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5C4B1B-03D5-4051-BC43-B96335E9C4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5C4B1B-03D5-4051-BC43-B96335E9C4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B18F78-26B5-478C-B02E-B2E4DC4FD069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B18F78-26B5-478C-B02E-B2E4DC4FD069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B18F78-26B5-478C-B02E-B2E4DC4FD069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B18F78-26B5-478C-B02E-B2E4DC4FD069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8202DD0A-6542-4AAE-A16F-A722D6680308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8202DD0A-6542-4AAE-A16F-A722D6680308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8202DD0A-6542-4AAE-A16F-A722D6680308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8202DD0A-6542-4AAE-A16F-A722D6680308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02BE77D-05E5-46A3-840E-4E0DF43FE5BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02BE77D-05E5-46A3-840E-4E0DF43FE5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02BE77D-05E5-46A3-840E-4E0DF43FE5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02BE77D-05E5-46A3-840E-4E0DF43FE5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD203B9F-EAF1-4B06-AC25-D5F043C2FC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD203B9F-EAF1-4B06-AC25-D5F043C2FC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD203B9F-EAF1-4B06-AC25-D5F043C2FC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD203B9F-EAF1-4B06-AC25-D5F043C2FC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA} = {3040C6D4-DCC4-47D3-A837-4F0FC58EEDBF}
+		{7BC0B0C2-F0CE-44E5-8C42-30339A5ACCD2} = {557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA}
+		{EEFCA7C7-6A10-450B-8A6B-D081811F7108} = {7BC0B0C2-F0CE-44E5-8C42-30339A5ACCD2}
+		{DA53FF66-1EDC-43EE-BA3D-49D094BDCFF9} = {7BC0B0C2-F0CE-44E5-8C42-30339A5ACCD2}
+		{0D55169A-FF7A-4C34-B878-4A2E983CA138} = {557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA}
+		{5876943A-D66A-4433-A70C-E530C2B97905} = {557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA}
+		{25F46B85-92F8-4C6D-820C-78F5C28676B8} = {557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA}
+		{C8F0C661-385D-46A2-AA3E-4B8452EEE65F} = {557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA}
+		{2E5C4B1B-03D5-4051-BC43-B96335E9C4E7} = {557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA}
+		{81B18F78-26B5-478C-B02E-B2E4DC4FD069} = {557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA}
+		{8202DD0A-6542-4AAE-A16F-A722D6680308} = {557D0CD6-5EB9-449A-8B9F-7191DDF7DBCA}
+		{C02BE77D-05E5-46A3-840E-4E0DF43FE5BF} = {52793A96-45B3-49E5-832D-0DE0A8E315EC}
+		{FD203B9F-EAF1-4B06-AC25-D5F043C2FC4F} = {52793A96-45B3-49E5-832D-0DE0A8E315EC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A7148A2-1C2A-476A-ABEA-C2B78FA82236}
+	EndGlobalSection
+EndGlobal
