@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\EvolentHealth.Directory.Contact.Business\EvolentHealth.Directory.Contact.Business.csproj" />
+    <ProjectReference Include="..\..\EvolentHealth.Directory.Contact.Contract\EvolentHealth.Directory.Contact.Contract.csproj" />
+    <ProjectReference Include="..\..\EvolentHealth.Directory.Contact.DataAccess\EvolentHealth.Directory.Contact.DataAccess.csproj" />
+    <ProjectReference Include="..\..\EvolentHealth.Directory.Contact.Repository\EvolentHealth.Directory.Contact.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
