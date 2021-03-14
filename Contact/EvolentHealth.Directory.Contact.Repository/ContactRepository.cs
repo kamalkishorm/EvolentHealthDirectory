@@ -48,7 +48,7 @@ namespace EvolentHealth.Directory.Contact.Repository
             catch (Exception ex)
             {
                 _logger.LogException(ex);
-                return new List<ContactDto>();
+                throw ex;
             }
         }
 
@@ -78,7 +78,7 @@ namespace EvolentHealth.Directory.Contact.Repository
             catch (Exception ex)
             {
                 _logger.LogException(ex);
-                return new ContactDto();
+                throw ex;
             }
         }
 

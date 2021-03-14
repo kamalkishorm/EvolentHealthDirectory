@@ -38,8 +38,9 @@ namespace EvolentHealth.Directory.Contact.Business
         public async Task<Contract.Models.Business.Contact> GetContactById(int id)
         {
             if (id != 0) return await _contactDataAccess.GetContactById(id).ConfigureAwait(false);
-            _logger.LogException(new InvalidDataException("`Id` can't be zero"));
-            return new Contract.Models.Business.Contact();
+            var exception = new InvalidDataException("`Id` can't be zero");
+            _logger.LogException(exception);
+            throw exception;
         }
 
         /// <summary>
@@ -64,9 +65,9 @@ namespace EvolentHealth.Directory.Contact.Business
         public async Task<bool> UpdateContact(int id, Contract.Models.Business.Contact newContact)
         {
             if (id != 0) return await _contactDataAccess.UpdateContact(id,newContact).ConfigureAwait(false);
-
-            _logger.LogException(new InvalidDataException("`Id` can't be zero"));
-            return false;
+            var exception = new InvalidDataException("`Id` can't be zero");
+            _logger.LogException(exception);
+            throw exception;
         }
 
 
@@ -80,8 +81,9 @@ namespace EvolentHealth.Directory.Contact.Business
         {
             status.ThrowIfNullOrEmpty("Status","Status value is required",_logger);
             if (id != 0) return await _contactDataAccess.UpdateStatusContact(id, status).ConfigureAwait(false);
-            _logger.LogException(new InvalidDataException("`Id` can't be zero"));
-            return false;
+            var exception = new InvalidDataException("`Id` can't be zero");
+            _logger.LogException(exception);
+            throw exception;
         }
 
     }
