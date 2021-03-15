@@ -17,7 +17,8 @@ namespace EvolentHealth.Directory.Contact.Repository.Context
                     FirstName = "Kamal",
                     LastName = "Mehra",
                     Email = "kkm7668@gmail.com",
-                    PhoneNumber = "+91-8432862796"
+                    PhoneNumber = "+91-8432862796",
+                    Status = StatusValue.Active
                 },
                 new Models.Contact()
                 {
